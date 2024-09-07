@@ -3,7 +3,7 @@ export default ()=>{
   return(
 <View style={styles.container}>
   <Text>
-    hello todo list
+    i changed the code 
   </Text>
 </View>
   );}
