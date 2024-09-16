@@ -16,28 +16,36 @@ export default function AboutScreen() {
   const navigation = useNavigation<AboutScreenNavigationProp>();
 
   return (
-    <View style={styles.container}>
-      <TextInput>
-        
-      </TextInput>
-      <Text style={styles.title}>Welcome to the About Screen</Text>
-      {/* Button to navigate to Home */}
-      <Button
-        title="Go to Home"
-        onPress={() => navigation.navigate('Home')} // Navigate back to Home screen
-      />
+    <View style={styles.container} >
+      <View style={styles.TextInput}>
+      <TextInput style={styles.textinput} placeholder='Type the task'/>
+      <Button title='Add task'/>
+      </View>
+      <View>
+      <Text> List of tasks</Text>
+      </View>
     </View>
   );
 }
 
+      {/* <Text style={styles.title}>Welcome to the About Screen</Text> */}
+      {/* Button to navigate to Home */}
+      {/* <Button
+        title="Go to Home"
+        onPress={() => navigation.navigate('Home')} // Navigate back to Home screen
+      /> */}
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+
+    padding: 50,
   },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+ textinput: {
+    borderWidth: 1,
+    borderColor:'#cccccc',
+    width:"80%",
   },
+  TextInput:{
+  flexDirection:'row',
+  justifyContent:'space-between',
+  }
 });
