@@ -14,7 +14,7 @@ export default function HomeScreen() {
   const navigation = useNavigation<HomeScreenNavigationProp>();
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome to the Home Screen</Text>
+      <Text style={styles.title}>Hey i have changed the text </Text>
       {/* Button to navigate to the About screen */}
       <Button
         title="Go to About"
